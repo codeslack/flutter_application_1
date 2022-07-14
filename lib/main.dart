@@ -26,8 +26,12 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Hello World"),
       ),
+<<<<<<< HEAD
       backgroundColor: const Color.fromARGB(255, 238, 238, 240),
       body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+=======
+      body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+>>>>>>> 08f802ec1e5e08441b1374eaf3b27a6a2aa39020
         Container(
           height: 100,
           width: 100,
