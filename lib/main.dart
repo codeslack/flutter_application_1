@@ -26,21 +26,28 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Hello World"),
       ),
-      body: Center(
-        child: Container(
-          height: 300,
-          width: 300,
+      body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+        Container(
+          height: 100,
+          width: 100,
           color: Colors.amber,
-          child: const Center(
-            child: Text(
-              "Hello there",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
         ),
+        Container(
+          height: 100,
+          width: 100,
+          color: Colors.blueAccent,
+        ),
+        Container(
+          height: 100,
+          width: 100,
+          color: Colors.redAccent,
+        ),
+      ]),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("Button Pressed");
+        },
+        child: const Icon(Icons.access_alarm_outlined),
       ),
     );
   }
