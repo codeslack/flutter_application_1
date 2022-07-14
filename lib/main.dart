@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home.dart';
 
 void main() {
   runApp(const PractiseApp());
@@ -11,7 +12,7 @@ class PractiseApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "First App",
-      home: HomePage(),
+      home: HomePage2(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -26,12 +27,8 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Hello World"),
       ),
-<<<<<<< HEAD
       backgroundColor: const Color.fromARGB(255, 238, 238, 240),
       body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-=======
-      body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
->>>>>>> 08f802ec1e5e08441b1374eaf3b27a6a2aa39020
         Container(
           height: 100,
           width: 100,
