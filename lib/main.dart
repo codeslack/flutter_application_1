@@ -47,6 +47,7 @@ class HomePage extends StatelessWidget {
       ]),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          // ignore: avoid_print
           print("Button Pressed");
         },
         child: const Icon(Icons.access_alarm_outlined),
